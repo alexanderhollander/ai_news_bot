@@ -2,8 +2,11 @@ import feedparser
 from newspaper import Article
 import openai
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Установи свой API ключ OpenAI
-openai.api_key = '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'
+openai.api_key = 'OPENAI_API_KEY'
 
 # RSS-источники новостей об ИИ
 rss_urls = [

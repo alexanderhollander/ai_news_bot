@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Установи свой API ключ OpenAI
-openai.api_key = 'OPENAI_API_KEY'
+import os
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # RSS-источники новостей об ИИ
 rss_urls = [

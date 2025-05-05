@@ -7,3 +7,4 @@ newspaper3k
 python-dotenv
 openai
 lxml[html_clean]
+openai==0.28
